@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Futuro - Théo Duarte Bretas</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fa;
+    color:#333;
+    overflow-x:hidden;
+}
+
+header{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url(bezerra.JPG);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+header p{
+    font-size:1.4rem;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.titulo{
+    text-align:center;
+    font-size:2.5rem;
+    color:#2d6a4f;
+    margin-bottom:40px;
+}
+
+.sobre{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.sobre img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.sobre-texto{
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#2d6a4f;
+    margin-bottom:15px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.galeria img:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    background:#2d6a4f;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.animar{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+}
+
+.animar.mostrar{
+    opacity:1;
+    transform:translateY(0);
+}
+
+@media(max-width:900px){
+    .sobre{
+        grid-template-columns:1fr;
+    }
+
+    header h1{
+        font-size:2.8rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Meu Futuro</h1>
+        <p>Os sonhos de Théo Duarte Bretas</p>
+    </div>
+</header>
+
+<section class="animar">
+    <h2 class="titulo">Quem Sou Eu</h2>
+
+    <div class="sobre">
+        <img src="samuel.JPG" alt="Foto de Théo">
+
+        <div class="sobre-texto">
+            <p>
+                Meu nome é <strong>Théo Duarte Bretas</strong>,
+                sou estudante do 2º ano do Ensino Médio Integral.
+            </p>
+
+            <br>
+
+            <p>
+                Sou apaixonado pela minha família e acredito que o
+                trabalho, a dedicação e os valores ensinados pelos meus pais
+                são o caminho para uma vida de sucesso.
+            </p>
+
+            <br>
+
+            <p>
+                Meu maior objetivo é me tornar um homem bem-sucedido,
+                construir uma linda família e seguir os passos do meu pai,
+                que sempre foi uma inspiração para mim.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="animar">
+    <h2 class="titulo">Meu Sonho</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌱 Trabalhar na Roça</h3>
+            <p>
+                Quero viver no campo, administrando minha própria fazenda
+                e contribuindo para o crescimento do agronegócio.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🐄 Criação de Gado</h3>
+            <p>
+                Sonho em possuir grandes rebanhos, cuidando dos animais
+                com responsabilidade e utilizando tecnologias modernas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👨‍👩‍👧‍👦 Família</h3>
+            <p>
+                Desejo construir uma família unida, baseada em amor,
+                respeito e nos mesmos valores que aprendi em casa.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="animar">
+    <h2 class="titulo">Minha Inspiração</h2>
+
+    <div class="sobre">
+        <div class="sobre-texto">
+
+            <p>
+                Meu pai é meu maior exemplo. Sua dedicação ao trabalho,
+                sua honestidade e seu amor pela família me inspiram todos os dias.
+            </p>
+
+            <br>
+
+            <p>
+                Quero seguir seus passos, construir minha história e
+                deixar um legado para as próximas gerações.
+            </p>
+
+        </div>
+
+        <img src="pai.jpg" alt="Meu Pai">
+    </div>
+</section>
+
+<section class="animar">
+    <h2 class="titulo">Galeria dos Meus Sonhos</h2>
+
+    <div class="galeria">
+        <img src="bezerra.JPG">
+        <img src="bezerrinha.JPG">
+        <img src="samuel.JPG">
+        <img src="familia.jpg">
+    </div>
+</section>
+
+<footer>
+    <h3>Théo Duarte Bretas</h3>
+    <p>Transformando sonhos em realidade.</p>
+</footer>
+
+<script>
+
+const elementos = document.querySelectorAll('.animar');
+
+function aparecer(){
+    elementos.forEach(item=>{
+        const topo = item.getBoundingClientRect().top;
+
+        if(topo < window.innerHeight - 100){
+            item.classList.add('mostrar');
+        }
+    });
+}
+
+window.addEventListener('scroll', aparecer);
+aparecer();
+
+</script>
+
+</body>
+</html>
